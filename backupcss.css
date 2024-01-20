@@ -1,0 +1,470 @@
+/*Author: Alireza Hamami Totmaj 
+  Date: October 27, 2023 
+  Filename: styles.css */
+  
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Share+Tech+Mono&display=swap");
+
+/* Global styles */
+
+
+
+
+
+
+.toggle {
+  background: none;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px) scaleX(2);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px) scaleX(2);
+  margin-left: 0px;
+}
+
+@keyframes navLinkAnimate {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+/* Landing Page */
+.landing-page {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg,
+      rgba(106, 156, 137, 0.9) 0%,
+      rgba(0, 0, 0, 0.8) 100%),
+    url("images/landing-page.png") center no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.main-message {
+  width: 100%;
+  max-width: 58rem;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-message h2 {
+  letter-spacing: 1.2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s steps(45), blink 5s ease-in-out 7s infinite;
+  width: 45ch;
+  margin: auto;
+  border-right: 4px solid rgba(255, 255, 255, 1);
+}
+
+@keyframes typing {
+  75% {
+    width: 0ch;
+    color: rgba(249, 105, 14, 1);
+  }
+
+  100% {
+    width: 27ch;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-right: 4px solid rgba(255, 255, 255, 0);
+  }
+
+  100% {
+    border-right: 4px solid rgb(194, 194, 194);
+  }
+}
+
+.main-message h3 {
+  font-size: 4rem;
+  margin: 1rem 0;
+  color: rgba(249, 105, 14, 1);
+  background: linear-gradient(to right,
+      rgba(249, 105, 14, 1) 0%,
+      rgba(102, 51, 153, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-message p {
+  text-transform: none;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.container nav {
+  border: 0;
+}
+
+.intro-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 15rem;
+  margin: 0 9px;
+  background: rgb(3, 155, 155);
+  border-radius: 2rem;
+  color: #fafafa;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: background-color 650ms;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  color: #fafafa;
+  background-color: rgb(189, 72, 0);
+}
+
+.scroll-down i {
+  color: #fafafa;
+  transition: color 650ms;
+  margin-top: 2rem;
+  font-size: 3.5rem;
+}
+
+.scroll-down i:hover {
+  color: rgba(189, 72, 0);
+}
+
+/* About */
+
+.about {
+  width: 100%;
+  min-height: auto;
+  max-width: 70rem;
+  margin: 2% auto;
+}
+
+.scroll-down svg {
+  fill: #fafafa;
+  margin-top: 3rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  min-height: auto;
+}
+
+.about-img img {
+  height: 12rem;
+  width: auto;
+  border-radius: 50%;
+  margin: 2rem;
+  box-shadow: 0 20px 30px 0 rgba(0, 255, 255, 0.15);
+}
+
+.about-text-box {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.about-text-box h2 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.about-text-box p {
+  font-family: "Poppins", sans-serif;
+  text-align: justify;
+  font-size: 1.4rem;
+  padding: 0;
+  margin-bottom: 1.45rem;
+}
+
+hr {
+  margin: 2rem 0;
+  background: linear-gradient(to right,
+      rgba(249, 105, 14, 1) 0%,
+      rgba(102, 51, 153, 1) 100%);
+  border: 0;
+  height: 1px;
+}
+
+/* My goals */
+
+.services {
+  min-height: auto;
+  max-width: 90rem;
+  margin: auto;
+}
+
+.title-heading {
+  text-align: center;
+}
+
+.title-heading h2 {
+  font-size: 2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.title-heading p {
+  font-family: "Poppins", sans-serif;
+}
+
+.service-tiers {
+  margin-bottom: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tier-item:last-child,
+.tier-item:last-child h2,
+.tier-item:last-child p {
+  width: 80%;
+  text-align: justify;
+  margin: 1% auto;
+}
+
+.tier-item:last-child h2 {
+  text-align: center;
+}
+
+.tier-item:last-child {
+  height: 12rem;
+}
+
+.tier-item {
+  height: 15rem;
+  position: relative;
+  justify-content: center;
+  cursor: default;
+}
+
+.tier-item i {
+  font-size: 3.5rem;
+}
+
+.tier-item h2 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right,
+      rgba(249, 105, 14, 1) 0%,
+      rgba(102, 51, 153, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tier-item p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  width: 38rem;
+  text-align: justify;
+}
+
+/* Projects */
+
+.projects {
+  min-height: auto;
+  max-width: 70rem;
+  margin: auto;
+}
+
+
+.project-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1.45rem 0 1.45rem;
+}
+
+.project-img {
+  flex: 1;
+}
+
+.project-description {
+  margin: 0 3rem 0 0;
+  flex: 1;
+  width: 100%;
+}
+
+.project-description h2 {
+  font-size: 2rem;
+  margin: 2rem 0;
+  background: linear-gradient(to right,
+      rgba(249, 105, 14, 1) 0%,
+      rgba(102, 51, 153, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-description p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  width: 500px;
+  text-align: justify;
+}
+
+.project-link {
+  display: inline-block;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
+
+/* Contact */
+
+.contact {
+  width: 100%;
+  min-height: auto;
+  max-width: 70rem;
+  margin: 2% auto;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.contact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0.9rem 2rem;
+}
+
+.contact .container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  max-width: 70rem;
+  margin: 1% auto;
+  color: #8a8a8a;
+  text-align: center;
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+footer a {
+  margin: 0 0.2rem;
+}
+
+.footer-coded-by {
+  margin: 2rem 0;
+}
+
+.footer-social a {
+  margin: 0 0.5rem;
+  font-size: 2rem;
+}
+
+/* resume */
+
+.resume-table {
+  width: 100%;
+  max-width: 110rem;
+  border-collapse: collapse;
+  margin: 3rem auto 0 auto;
+  table-layout: fixed;
+}
+
+.first-col {
+  width: 30%;
+  font-size: x-large;
+  text-align: center;
+}
+
+.resume-table th,
+.resume-table td {
+  border: 2px solid rgb(3, 155, 155);
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word;
+  color: #333;
+  /* Adjust the text color to improve readability */
+}
+
+.data li {
+  line-height: 25px;
+  margin-bottom: 4%;
+  list-style: disc;
+  margin-left: 4%;
+  text-align: justify;
+  margin-right: 2%;
+}
+
+.resume-table li {
+  font-weight: 900;
+  line-height: 25px;
+  margin-bottom: 4%;
+}
+
+.resume-table th {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.resume-table td {
+  background-color: #f2f2f2;
+  font-size: 1.4rem;
+  color: #333;
+  /* Adjust the text color for better contrast */
+}
+
+/* Optional: Style the section headers (Work Experience and Education) */
+
+.experience-and-education h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#header-resume {
+  position: relative;
+  height: auto;
+}
+
+download {
+  margin: 0 auto;
+}
+
+.experience-and-education {
+  width: 100%;
+  min-height: auto;
+  max-width: 70rem;
+  margin: 2% auto;
+}

@@ -1,0 +1,86 @@
+/*Author: Alireza Hamami Totmaj 
+  Date: December 18, 2023 
+  Filename: layout.css */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+@media only screen and (max-width: 480px) {
+  body,
+  html {
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+  }
+  .about-text-box {
+    margin-top: 4%;
+  }
+  .project-description p,
+  .tier-item,
+  .tier-item p {
+    width: 100%;
+  }
+  .project-description {
+    margin: 0;
+  }
+  .tier-item {
+    margin-top: 4%;
+    height: auto;
+  }
+  .service-tiers {
+    flex-direction: column;
+  }
+  .tier-item:last-child,
+  .tier-item:last-child p {
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 4%;
+    height: auto;
+    text-align: justify;
+  }
+  .tier-item:last-child h2 {
+    text-align: center;
+  }
+  .nav-list.active {
+    width: 100%;
+  }
+  header nav {
+    border: 0;
+  }
+  .cta a {
+    margin-top: 0;
+  }
+  #landing-page,
+  .about-img,
+  .project-img {
+    display: none;
+  }
+  .nav-brand {
+    display: block;
+    margin: 0 0 !important;
+  }
+  .contact,
+  .title-heading {
+    text-align: justify;
+  }
+  .MyGoals .container,
+  .projects.container,
+  .MySkills.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20%;
+  }
+}
+@media only screen and (min-width: 481px) {
+  #landing-page,
+  .about-img,
+  .project-img {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=output2.css.map */
