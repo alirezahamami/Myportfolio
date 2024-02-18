@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Childcare After Program</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="source/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <h1
+            class="text-lg sm:text-3xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-5xl font-bold text-center text-white;">
+            After School Program at ACME Childcare
+        </h1>
+    </div>
+    <div class="container mx-auto p-4">
+        <div class="flex flex-row lg:flex-row justify-evenly p-4">
+            <div id="play" class="button" onclick="toggleCollapse('videoContainer')">
+                <img src="source/play.png" alt="play button" class="w-full h-full object-cover" >
+            </div>
+            <div id="game" class="button" onclick="toggleCollapse('canvasContainer')">
+                <img src="source/game.jpg" alt="game button" class="w-full h-full object-cover" >
+            </div>
+        </div>
+        <div id="videoContainer" class="max-h-0 overflow-hidden transition-all duration-300">
+            <div class="flex flex-col lg:flex-row justify-between p-4">
+                <div class="video-box">
+                    <h2 class="video-text-box">Tom & Jerry</h2>
+                    <div class="video">
+                        <iframe class="max-w-full" width="560" height="315"
+                            src="https://www.youtube.com/embed/t0Q2otsqC4I"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="video-box">
+                    <h2 class="video-text-box">Farm Animals Cartoon</h2>
+                    <div class="video">
+                        <iframe class="max-w-full" width="560" height="315"
+                            src="https://www.youtube.com/embed/N_FrWkyrnHM"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="video-box">
+                    <h2 class="video-text-box">Urkel Saves Santa</h2>
+                    <div class="video">
+                        <iframe class="max-w-full" width="560" height="315"
+                            src="https://www.youtube.com/embed/YBUd8z8STX0"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="canvasContainer">
+            <canvas id="MyCanvas" width="400" height="400"></canvas>
+        </div>
+    </div>
+</body>
+
+</html>
