@@ -1,0 +1,85 @@
+table {
+    border-collapse: collapse;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    grid-column: 1; /* Place in the first column */
+    grid-row: 1;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    background-color: grey;
+    font-size: 40px;
+    cursor: default;
+}
+
+
+#theGame {
+    display : grid; 
+    margin: 3% 30%;
+    grid-template-columns: 2; 
+    grid-template-rows: 1; 
+    gap: 5px;
+}
+
+.group-btn{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.btn {
+    background-color: blanchedalmond;
+    align-items: center;
+    height: 40px;
+    width: 80px;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    color: #3498db;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn:active {
+    border-color: #2980b9;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.8);
+}
+
+caption {
+    caption-side:bottom; 
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#Checkbox{
+    height: 15px;
+    width: 15px;
+}
