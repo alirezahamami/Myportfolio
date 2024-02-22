@@ -96,7 +96,7 @@
                                 sessionStorage.removeItem("selectedTrackName")
                                 await showModalMessage("Success", `Track ${trackName} deleted successfully.`);
                                 // Redirect to the main page after deletion or cancellation
-                                window.location.href = "/";
+                                window.location.href = "/_FrontendStarterFiles/index.html";
                             } else {
                                 switch(response.status){
                                     case 404: {

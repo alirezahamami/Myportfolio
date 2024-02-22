@@ -161,7 +161,7 @@
                                         .then(async json => {
                                             const newTrackId = json.lastInsertRowid; // should come from API response
                                             await showModalMessage("Success", `Track '${trackName}' added successfully with Id '${newTrackId}'`);
-                                            window.location.href = "/";
+                                            window.location.href = "/_FrontendStarterFiles/index.html";
                                         });
                                     break;
                                 }
